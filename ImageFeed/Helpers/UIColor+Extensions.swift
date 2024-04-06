@@ -1,7 +1,7 @@
 import UIKit
 
 extension UIColor {
-    static var ypReds: UIColor { UIColor(named: "YP Red") ?? UIColor.red }
+    static var ypReds: UIColor { UIColor(named: "YP_Red") ?? UIColor.red }
     static var ypBlacks: UIColor { UIColor(named: "YP Black") ?? UIColor.black }
     static var ypWhiteWithAlpha: UIColor { UIColor(named: "YP White(Alpha 50)") ?? UIColor.white }
     static var ypBlues: UIColor { UIColor(named: "YP Blue") ?? UIColor.blue }
