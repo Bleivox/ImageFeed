@@ -163,7 +163,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="Sharing"/>
                                 <connections>
-                                    <action selector="didTapShareButton" destination="uWu-9C-ONt" eventType="touchUpInside" id="Hox-Xc-LbC"/>
+                                    <action selector="didTapShareButton:" destination="uWu-9C-ONt" eventType="touchUpInside" id="OH2-Si-4I5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXo-QC-fS1">
