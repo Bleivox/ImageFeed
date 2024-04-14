@@ -45,7 +45,7 @@ final class ProfileViewController: UIViewController {
         
         let descriptionLabel = UILabel()
         descriptionLabel.text = "Hello, World!"
-        descriptionLabel.font = .systemFont(ofSize: 13)
+        descriptionLabel.font = .systemFont(ofSize: 13, weight: .regular)
         descriptionLabel.textColor = .ypWhite
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(descriptionLabel)
@@ -56,13 +56,13 @@ final class ProfileViewController: UIViewController {
         
         let buttonImage = UIImage(named: "Exit")
         guard let buttonImage = buttonImage else { return }
-        let button1 = UIButton.systemButton(with: buttonImage, target: self, action: #selector(self.quitFromProfile))
-        button1.tintColor = .ypRed
-        button1.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(button1)
+        let quitButton = UIButton.systemButton(with: buttonImage, target: self, action: #selector(self.quitFromProfile))
+        quitButton.tintColor = .ypRed
+        quitButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(quitButton)
         
-        NSLayoutConstraint.activate([button1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 55),
-                                     button1.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24)])
+        NSLayoutConstraint.activate([quitButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 55),
+                                     quitButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24)])
         
     
     }
